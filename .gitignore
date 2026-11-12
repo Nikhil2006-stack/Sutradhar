@@ -45,4 +45,7 @@ npm-debug.log*
 Thumbs.db
 .idea/
 .vscode/
+infra/bin/
+LIVE_HTTPS_URL.txt
+
 
