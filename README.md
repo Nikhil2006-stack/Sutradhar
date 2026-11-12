@@ -267,16 +267,16 @@ Pop-Location
 Visit **`http://localhost:5173`** in your browser.
 
 ### Demo Login Credentials (Pre-Seeded Indian MSME Workspace)
-Organisation: **Bharat Precision Components Pvt Ltd** (`27AABCB1234F1Z5`) & **Deccan Industrial Distributors LLP** (`27AAECD9876K1Z2`)
+Organisation: **Bharat Precision Engineering Pvt. Ltd. (Demo)** (`27AABCB1234F1Z5`) & **Deccan Agro & Trading Co.** (`27AABCD8899K1Z2`)
 
 | Role | Email | Password |
 | :--- | :--- | :--- |
-| **Organisation Owner / Super Admin** | `rajesh@bharatprecision.in` | `Sutradhar@123` |
-| **Operations Manager** | `priya@bharatprecision.in` | `Sutradhar@123` |
-| **Finance Manager** | `amit@bharatprecision.in` | `Sutradhar@123` |
-| **Procurement Officer** | `vikram@bharatprecision.in` | `Sutradhar@123` |
-| **Warehouse Employee** | `suresh@bharatprecision.in` | `Sutradhar@123` |
-| **Auditor / Read-Only** | `neha@bharatprecision.in` | `Sutradhar@123` |
+| **Organisation Owner / Super Admin** | `arjun.mehta@sutradhar.ai` | `Sutradhar@123` |
+| **Operations Manager** | `priya.sharma@sutradhar.demo` | `Sutradhar@123` |
+| **Finance Manager** | `amit.verma@sutradhar.demo` | `Sutradhar@123` |
+| **Procurement Officer** | `vikram.joshi@sutradhar.demo` | `Sutradhar@123` |
+| **Warehouse Employee** | `ramesh.patil@sutradhar.demo` | `Sutradhar@123` |
+| **Auditor / Read-Only** | `meera.iyer@sutradhar.demo` | `Sutradhar@123` |
 
 *(You can also switch between any of these 6 roles in 1 click directly from the Login page or the top-bar Role Switcher).*
 

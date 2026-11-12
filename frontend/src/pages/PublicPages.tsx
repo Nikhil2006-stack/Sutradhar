@@ -20,6 +20,7 @@ import {
 } from 'lucide-react';
 import { useAuth } from '../hooks/useAuth';
 import { Badge } from '../components/ui/Common';
+import { extractApiError } from '../services/api';
 
 export const LandingPage: React.FC = () => {
   return (
@@ -422,7 +423,7 @@ export const LoginPage: React.FC = () => {
       await loginWithCredentials(email, password);
       navigate('/app/dashboard');
     } catch (err: any) {
-      const msg = err.response?.data?.detail || 'Invalid email or password.';
+      const msg = extractApiError(err, 'Invalid email or password.');
       setError(msg);
       notify('Authentication Failed', msg, 'error');
     } finally {
@@ -430,9 +431,21 @@ export const LoginPage: React.FC = () => {
     }
   };
 
-  const quickFill = (demoEmail: string) => {
+  const quickFill = async (demoEmail: string) => {
     setEmail(demoEmail);
     setPassword('Sutradhar@123');
+    setError('');
+    setLoading(true);
+    try {
+      await loginWithCredentials(demoEmail, 'Sutradhar@123');
+      navigate('/app/dashboard');
+    } catch (err: any) {
+      const msg = extractApiError(err, 'Demo login failed.');
+      setError(msg);
+      notify('Authentication Failed', msg, 'error');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -555,7 +568,7 @@ export const RegisterPage: React.FC = () => {
       });
       navigate('/app/dashboard');
     } catch (err: any) {
-      const msg = err.response?.data?.detail || 'Registration failed.';
+      const msg = extractApiError(err, 'Registration failed.');
       setError(msg);
       notify('Registration Error', msg, 'error');
     } finally {
