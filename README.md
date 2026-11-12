@@ -2,6 +2,10 @@
 
 > **"One intelligent workspace to manage, understand and improve your entire business operation."**
 
+- **Live Production Website (24/7 Railway Cloud HTTPS)**: **https://sutradhar-production-9161c51a.up.railway.app**
+- **Live Interactive API Docs (Swagger UI)**: **https://sutradhar-production-9161c51a.up.railway.app/api/docs**
+- **Live Health Endpoint**: **https://sutradhar-production-9161c51a.up.railway.app/api/v1/health**
+
 **Sutradhar** is an enterprise-grade, multi-tenant Business Operations and Decision Intelligence SaaS platform purpose-built for **Indian MSMEs, discrete manufacturers, and wholesale distributors**. It unifies multi-warehouse inventory, supplier reliability intelligence, procurement workflows, OCR/PDF document intelligence, GST-ready financial tracking, workflow automation, and a **human-in-the-loop AI Business Intelligence & Action Engine**.
 
 > [!NOTE]
